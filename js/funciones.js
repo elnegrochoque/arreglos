@@ -33,7 +33,7 @@ function ejercicio2(cadena) {
     return propiedadCadena;
 }
 document.write(ejercicio2("hola"));
-
+document.write("</br>");
 /*
 3- Solicitar por pantalla al usuario ingresar el valor de los lados de un
 rectángulo, luego crear una función para calcular su perímetro y
@@ -41,13 +41,26 @@ mostrarlo por pantalla.
 
 La fórmula del perímetro  es p = 2*(a +b)
 */
-function ejercicio3(params) {
+let lado1=parseInt(prompt("Ingrese lado del rectangulo"));
+let lado2=parseInt(prompt("Ingrese lado del rectangulo"));
     
+function ejercicio3(base,altura) {
+    return ((base+altura)*2);
 }
-
+document.write(ejercicio3(lado1,lado2));
 /*
 4- Escriba un script que muestre la tabla de multiplicar de un número 
 ingresado por pantalla, la creación de la tabla debe ser realizada con 
 una función y mostrar solo los resultados del 1 al 10 del número elegido 
 por el usuario.
 */
+document.write("</br>");
+let numParaTabla=parseInt(prompt("Ingrese numero"));
+
+function ejercicio4(numero) {
+    
+    for (let index = 0; index < 11; index++) {
+        document.write((numero*index)+"</br>"); 
+    }
+}
+ejercicio4(numParaTabla);
